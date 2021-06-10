@@ -1,0 +1,178 @@
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: Exo;
+    font-size: 10px;
+}
+
+/* Hero Area */
+body {
+    overflow-x: hidden;
+    color: #fff;
+}
+.bg {
+    min-height: 100vh;
+    background: url("/resources/img/bg.gif");
+    position: relative;
+    background-position: center;
+    overflow: hidden;
+}
+.techfest-vector,
+.gradient-top-left,
+.gradient-bottom,
+.vector-arrows {
+    position: absolute;
+}
+.techfest-vector {
+    top: 80px;
+    right: 0;
+}
+.gradient-top-left {
+    top: 0;
+    left: 0;
+}
+.gradient-bottom {
+    bottom: 0;
+}
+.vector-arrows {
+    bottom: 0;
+    left: 0;
+}
+
+.text-content {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 849px;
+}
+.hero-logo {
+    font-size: 1.8rem;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+}
+h1 {
+    display: none;
+}
+.coming-soon {
+    width: 100%;
+}
+form {
+    margin-bottom: 27px;
+}
+.form-group input.email {
+    font-family: inherit;
+    font-style: italic;
+    font-weight: 500;
+    padding: 15px 50px;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 30px;
+    position: relative;
+    outline: none;
+    width: 323px;
+    margin-right: 10px;
+}
+.input-icon {
+    content: url(../img/pen.svg);
+    position: absolute;
+    z-index: 1;
+    padding: 15px 0 0 20px;
+}
+input[type="submit"] {
+    border: none;
+    background: linear-gradient(to right, #00ffff, #102c66);
+    color: #fff;
+    font-family: inherit;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 14px 25px;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.social-media{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* -----------------------
+MEDIA QUERIES - Responsive
+------------------------*/
+
+@media screen and (max-width: 1440px){
+
+    .text-content{
+        top: 40%;
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+
+    .text-content{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    
+    .vector-arrows {
+        width: 70%;
+    }
+    .gradient-top-left{
+        width: 80%;
+    }
+    .techfest-vector{
+        width: 90%;
+        right: -25%;
+    }
+    .form-group input.email{
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 460px){
+    .hero-logo img{
+        height: 24px;
+    }
+    .hero-logo p{
+        font-size: 15px;
+    }
+
+    .form-group input.email{
+        padding: 10px 43px;
+        font-size: 12px;
+    }
+    .input-icon{
+        padding: 10px 0 0 17px;
+    }
+    input[type="submit"]{
+        padding: 6px 15px;
+        font-size: 17px;
+    }
+
+    .social-media img{
+        width: 25px;
+    }
+
+}

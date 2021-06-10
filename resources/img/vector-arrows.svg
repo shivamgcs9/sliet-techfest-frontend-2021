@@ -1,0 +1,36 @@
+<svg width="634" height="679" viewBox="0 0 634 679" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<path d="M-37.0776 766.214L-14.9641 786.22L57.4424 706.184L124.219 461.419L239.434 334.064L217.32 314.058L97.3979 446.617L30.6012 691.404L-37.0776 766.214Z" fill="#04B2C9"/>
+<path d="M252.758 363.608L271.146 276.786L186.617 303.77L252.758 363.608Z" fill="#04B2C9"/>
+<g opacity="0.4">
+<g opacity="0.4">
+<path opacity="0.4" d="M-35.4641 785.063L182.998 730.313L303.557 597.052L281.443 577.046L166.884 703.676L-62.0001 761.056L-35.4641 785.063Z" fill="#04B2C9"/>
+</g>
+<g opacity="0.4">
+<path opacity="0.4" d="M323.892 615.549L342.279 528.727L257.729 555.691L323.892 615.549Z" fill="#04B2C9"/>
+</g>
+</g>
+<g opacity="0.7">
+<rect width="270.528" height="757.537" transform="matrix(0.74156 0.670887 -0.670879 0.741567 388.914 128.115)" fill="url(#pattern0)"/>
+</g>
+<path d="M432.655 429.451L469.41 255.831L300.328 309.736L344.378 349.588L160.432 552.916L11.724 592.79L-96.5182 712.438L-52.2914 752.45L44.3102 645.669L193.018 605.795L388.605 389.6L432.655 429.451Z" fill="url(#paint0_linear)"/>
+<path d="M40.2526 836.174L214.454 799.279L416.159 576.321L394.046 556.315L198.737 772.203L13.031 811.547L40.2526 836.174Z" fill="#04B2C9"/>
+<path d="M429.483 605.864L447.871 519.043L363.32 546.007L429.483 605.864Z" fill="#04B2C9"/>
+<g opacity="0.4">
+<g opacity="0.4">
+<path opacity="0.4" d="M39.8014 484.006L17.688 464L-166 667.043L-143.887 687.049L39.8014 484.006Z" fill="#04B2C9"/>
+</g>
+<g opacity="0.4">
+<path opacity="0.4" d="M62.1491 504.248L80.5168 417.449L-3.9921 444.411L62.1491 504.248Z" fill="#04B2C9"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0"/>
+</pattern>
+<linearGradient id="paint0_linear" x1="440.322" y1="270.009" x2="24.1459" y2="730.026" gradientUnits="userSpaceOnUse">
+<stop offset="0.0169" stop-color="white"/>
+<stop offset="1" stop-color="#0CFFE2"/>
+</linearGradient>
+<image id="image0" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAX8AAAQrCAYAAABkY6whAAAACXBIWXMAAC4jAAAuIwF4pT92AAAA"/>
+</defs>
+</svg>
