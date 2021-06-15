@@ -10,7 +10,7 @@ const send = async () => {
     // $(".loading").show();
 
     console.log(email);
-    let res = await fetch("http://240cf5862f1c.ngrok.io/api/user/notify", {
+    let res = await fetch("http://localhost:4000/api/user/notify", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
