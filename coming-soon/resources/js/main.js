@@ -1,16 +1,15 @@
 
 const send = async () => {
     let email = document.getElementById('email').value
-    var pattern = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/; 
+    var pattern = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
     if (!email || !pattern.test(email)) {
         console.log('invalid');
-        return document.getElementById('errorMessage').style.display ="block"
+        return document.getElementById('errorMessage').style.display = "block"
     }
     document.getElementById('loading').style.display = 'block'
     // $(".loading").show();
 
-    console.log(email);
-    let res = await fetch("http://localhost:4000/api/user/notify", {
+    let res = await fetch("https://api.techfestsliet.com/api/user/notify", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -18,17 +17,23 @@ const send = async () => {
         },
         body: JSON.stringify({ email: email })
     })
+
     document.getElementById('loading').style.display = 'none'
-    document.getElementById('errorMessage').style.display ="none"
+    document.getElementById('errorMessage').style.display = "none"
+    
 
     let data = await res.json()
+
+    let form = document.getElementsByClassName('form')
+    
     if (data.statusCode == 200) {
-        popupOpenClose($(".popup"));
+        // popupOpenClose($(".popup"));
+        form[0].innerHTML= data.message;
     }
     else{
-        document.getElementById("message").innerHTML = data.message
-        document.getElementById("titleMessage").innerHTML = "Welcome Back"
-        popupOpenClose($(".popup"));
+        form[0].innerHTML= data.error;
+    
+        // popupOpenClose($(".popup"));
     }
 }
 function popupOpenClose(popup) {

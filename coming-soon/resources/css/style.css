@@ -200,7 +200,7 @@ body {
 }
 .bg {
     min-height: 100vh;
-    background: url("/resources/img/bg.gif");
+    background: url("../img/bg.gif");
     position: relative;
     background-position: center;
     overflow: hidden;
