@@ -1,3 +1,5 @@
+let form = document.getElementsByClassName('form')
+let message = document.getElementsByClassName('hiddenMessage')
 
 const send = async () => {
     let email = document.getElementById('email').value
@@ -20,21 +22,27 @@ const send = async () => {
 
     document.getElementById('loading').style.display = 'none'
     document.getElementById('errorMessage').style.display = "none"
-    
+
 
     let data = await res.json()
 
-    let form = document.getElementsByClassName('form')
-    
+
+
     if (data.statusCode == 200) {
         // popupOpenClose($(".popup"));
-        form[0].innerHTML= data.message;
+        form[0].style.display = 'none'
+        message[0].innerHTML = '<input  type="submit" onClick="showForm()" value="' + data.message + '" class="btn" ></input>';
     }
-    else{
-        form[0].innerHTML= data.error;
-    
+    else {
+        form[0].style.display = 'none'
+        message[0].innerHTML = '<input type="submit" onClick="showForm()" value="' + data.error + '" class="btn" ></input>';
         // popupOpenClose($(".popup"));
     }
+}
+
+const showForm = () => {
+    form[0].style.display = 'block'
+    message[0].innerHTML = '';
 }
 function popupOpenClose(popup) {
 

@@ -251,6 +251,9 @@ h1 {
 .form {
     margin-bottom: 27px;
 }
+.hiddenMessage{
+  margin-bottom: 27px;
+}
 .form-group input.email {
     font-family: inherit;
     font-style: italic;
