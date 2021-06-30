@@ -31,11 +31,11 @@ const send = async () => {
     if (data.statusCode == 200) {
         // popupOpenClose($(".popup"));
         form[0].style.display = 'none'
-        message[0].innerHTML = '<input  type="submit" onClick="showForm()" value="' + data.message + '" class="btn" ></input>';
+        message[0].innerHTML = '<input  type="submit" onClick="showForm()" value="Successfully Subscribed" class="btn" ></input>';
     }
     else {
         form[0].style.display = 'none'
-        message[0].innerHTML = '<input type="submit" onClick="showForm()" value="' + data.error + '" class="btn" ></input>';
+        message[0].innerHTML = '<input type="submit" onClick="showForm()" value="Welcome Back" class="btn" ></input>';
         // popupOpenClose($(".popup"));
     }
 }
