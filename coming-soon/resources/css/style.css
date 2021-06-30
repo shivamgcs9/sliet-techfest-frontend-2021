@@ -52,7 +52,7 @@
   }
   
   p {
-    color: #666666;
+    color: #f1f1f1;
     font-size: initial;
 }
 
@@ -337,24 +337,31 @@ MEDIA QUERIES - Responsive
 }
 
 @media screen and (max-width: 460px){
+  .text-content{
+    top: 50%;
+  }
     .hero-logo img{
         height: 24px;
     }
     .hero-logo p{
         font-size: 15px;
+        margin-top: 15px;
     }
 
     .form-group input.email{
         padding: 10px 43px;
         font-size: 12px;
+        margin: 15px 0 10px 0;
     }
+
     .input-icon{
         padding: 10px 0 0 17px;
+        margin-top: 15px;
     }
     input[type="submit"]{
         padding: 6px 15px;
         font-size: 17px;
-        margin-top: 6px;
+        margin-top: 5px;
     }
 
     .social-media img{
