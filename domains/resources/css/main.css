@@ -1,0 +1,656 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: Exo;
+    font-size: 10px;
+    color:#fff;
+    overflow-x: hidden;
+    background: #000;
+}
+
+.bg {
+    position: absolute;
+    width: 1536px;
+    height: 721px;
+    overflow: hidden;
+    overflow-y: hidden;
+    background: url(../img/earth1.svg); 
+    background-repeat: no-repeat;
+    
+    /* min-height: 100vh;
+    position: relative;
+    background-position: center;
+    overflow: hidden; */
+}
+.techfest-vector,
+.earth{
+    position: absolute;
+}
+
+.techfest-vector {
+    top: 150px;
+    right: 300px;
+    width: 700px;
+    height: 450px;
+    mix-blend-mode: lighten;
+}
+
+#u1 {
+    display: none;
+    margin: 0;
+    overflow: hidden;
+    overflow-y: hidden;
+    position: inherit;
+    width: 1535px;
+    height: 720px;
+    top: -200px;
+    background: linear-gradient(88.77deg, #000000 30.58%, rgba(0, 0, 0, 0) 79.74%), url(../img/precuela.png);
+}
+
+.details {
+    position: absolute;
+    left: 153px;
+    top: 370px;
+}
+
+#fac_name1 {
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: -50px;
+    margin-left: 70px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+#fac_name2 {
+    margin-left: 70px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.vvv {
+    display: none;
+    margin: 0;
+    overflow: hidden;
+    background: #001A54;
+}
+
+.domain_head {
+    position: absolute;
+    width: 74px;
+    height: 30px;
+    padding: 10px;
+    left: 153px;
+    top: 150px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: capitalize;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+}
+
+.domain_para {
+    position: absolute;
+    width: 500px;
+    height: 70px;
+    left: 153px;
+    top: 180px;
+    padding: 10px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 25px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+}
+
+.explore {
+    position: absolute;
+    left: 153px;
+    top: 300px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFCFC;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-image: linear-gradient(to right, #0e5ad3 0%, #0b7fb4 51%, #022255 100%);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin: 0px 8px;
+}
+
+.explore:hover {
+    cursor: pointer;
+}
+
+/* .earth {
+    top: 0px;
+    width: 1780px;
+    height: 1170px;
+    transform: rotate(-40.32deg);
+    background: url(../img/earth_image.png);
+    mix-blend-mode: lighten;
+} */
+header{
+    position: absolute;
+    width: 74px;
+    height: 24px;
+    top: 250px;
+    left: 100px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+#desc {
+    position: absolute;
+    width: 487px;
+    height: 59px;
+    left: 100px;
+    top: 280px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+}
+
+#domain {
+    position: absolute;
+    left: 80px;
+    top: 460px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.hr1 {
+    margin-left: 10px;
+    width: 1300px;
+    border: 0.5px solid white;
+}
+
+.hr2 {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    border: 0.5px solid #FFFFFF;
+}
+
+.hr3 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 0.5px solid #FFFFFF;
+}
+
+.hr4 {
+    margin-top: 140px;
+    border: 0.5px solid #FFFFFF;
+}
+
+.container {
+    margin-bottom: 30px;
+}
+.rectangle {
+    width: 245px;
+    height: 246px;
+    background: #C4C4C4;
+    border-radius: 8px;
+}
+
+.date_icon {
+    margin-top: 3px;
+}
+
+.reg_before {
+    margin-top: 2px;
+    font-family: Exo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.workshop_name {
+    font-family: Vipnagorgialla;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.workshop_desc{
+    width: 550px;
+    height: 96px;
+    font-family: Exo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.date1 {
+    margin-top: 20px;
+    width: 419px;
+    height: 38px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.reg_btn {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #BBBFC1;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #242731;
+    flex: none;
+    border-radius: 4px;
+    order: 0;
+    flex-grow: 0;
+}
+
+.reg_fee {
+    font-family: Exo;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: justify;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.reged_btn {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    border: 1px solid #BBBFC1;
+    text-transform: capitalize;
+    color: #242731;
+}
+
+.schedule {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    border: 1px solid #BBBFC1;
+    border-radius: 4px;
+    align-items: center;
+    text-align: right;
+    background: #001A54;
+    text-transform: capitalize;
+    color: #FFFCFC;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.event_coord {
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 2px;
+}
+
+.xxx {
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+
+.mob_no {
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.telegram {
+    border: 1px solid #FFFCFC;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 18px;
+    background: #001A54;
+    padding: 10px;
+    margin-top: 10px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.231818px;
+    color: #FFFCFC;
+    mix-blend-mode: normal;
+}
+
+.copyright {
+    margin-top: 10px;
+    padding: 10px;
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: -0.204545px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.icons_footer {
+    margin-top: 10px;
+    padding: 10px;
+    text-align: right;
+}
+
+.wrapper{
+    position: absolute;
+    width: 100%;
+    top: 470px;
+}
+.carousel{
+    margin: auto;
+    padding: 0 20px;
+}
+
+.card {
+    margin: 20px 0;
+    line-height: 180px;
+    height: 180px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid white;
+    background: linear-gradient(100.03deg, #C4C4C4 18.45%, rgba(196, 196, 196, 0) 94.09%);
+    mix-blend-mode: normal;
+    opacity: 1;
+    backdrop-filter: blur(10px);
+}
+
+.card:hover {
+    cursor: pointer;
+    background: linear-gradient(rgb(8, 7, 22) 20%, rgb(48, 51, 25)80%);
+}
+
+.card img {
+    margin-left: -0.5px;
+    margin-top: -0.5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width:30%;
+    height:177px;
+}
+
+.card-body-right {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: -10px;
+}
+
+.card-title {
+    font-family: Exo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFE;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 6px 0px;
+}
+
+.card-title1 {
+    font-family: Exo;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 6px 0px;
+}
+
+.card-text {
+    position: static;
+    left: 0px;
+    top: 56px;
+    font-family: Exo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 6px 0px;
+}
+  
+
+.owl-nav {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    font-size: 80px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background-image:none !important;
+   filter:none !important;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    left: 30px;
+    height: 50px;
+    width: 50px;
+    display:block;
+    outline:none !important;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    outline:none !important;
+    display: block;
+}
+
+.owl-nav .owl-prev.disabled,
+.owl-nav .owl-next.disabled {
+   display: none;
+}
+
+
+/* -----------------------
+MEDIA QUERIES - Responsive
+------------------------*/
+
+@media screen and (max-width: 1440px){
+
+    .hr2, .h3, .hr4{
+        width: 1125px;
+    }
+    .hr1 {
+        width: 1050px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    header, #desc{
+        left: 30px;
+        right: 30px;
+    }
+    #domain {
+        left: 35px;
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .bg{
+        bottom: 0px;
+        top: -30px;
+        width: 100%;
+    }
+    .techfest-vector{
+        width: 100%;
+        right: -10%;
+    }
+
+    .owl-carousel .owl-item img{
+        width: 50%;
+    }
+
+    .card-body-right {
+        margin-top: -150px;
+        margin-left: 180px;
+    }
+
+    .hr2, .hr3, .hr4 {
+        width: 310px;
+    }
+    .domain_head, .domain_para, .explore {
+        left: 40px;
+    }
+    .domain_para {
+        width: 300px;
+        height: 200px;
+    }
+    .explore {
+        top: 350px;
+    }
+    .workshop_desc {
+        width: 310px;
+        height: 96px;
+    }
+    .date1 {
+        margin-top: 110px;
+        width: 419px;
+        height: 38px;
+    }
+    .details {
+        margin-top: 30px;
+        margin-left: -110px;
+    }
+    #fac_name1 {
+        margin-top: -50px;
+        margin-left: 70px;
+    }
+    #fac_name2 {
+        margin-left: 70px;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+    }
+}
