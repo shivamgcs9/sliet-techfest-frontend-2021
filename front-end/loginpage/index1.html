@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & SignUp</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="hero">
+        <div class="logo">
+            <img src="logo.png" alt="">
+          </div>
+        <div class="form-box">
+            <h1>TechFEST'21</h1>
+            <p class="tagline">Revitalizing India:Growth Beyond Infinity</p>
+            <div class="botton-box">
+                
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="signup()">SignUp</button>
+            </div>
+
+            <form id="login" class="input-group">
+                <div class="box">
+                <p>Email</p>
+                <input type="text" class="input-field" placeholder="" required>
+                <p>Password</p>
+                <input type="text" class="input-field" placeholder="" required id="id_password">
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                <div class="forget">Forget?</div>
+                </div>
+                <input type="checkbox" class="checkbox"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Login -></button>
+            </form>
+            <form id="signup" class="input-group">
+              <div class="box">
+                <p>Name</p>
+                <input type="text" class="input-field" placeholder="" required>
+                <p>Enter your Email</p>
+                <input type="text" class="input-field" placeholder="" required>
+                <p>Set a Password</p>
+                <input type="text" class="input-field" placeholder="" required id="id_password1">
+                <i class="far fa-eye" id="togglePassword1" style="margin-left: -30px; cursor: pointer;"></i>
+                <p>Phone Number</p>
+                <input type="text" class="input-field" placeholder="" required>
+              </div>
+                <input type="checkbox" class="checkbox"><span>Accept all the terms and conditions</span>
+                <a href=index.html class="submit-btn">Go Next--></a>
+            </form>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login")
+        var y = document.getElementById("signup")
+        var z = document.getElementById("btn")
+
+        function signup(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+        const togglePassword = document.querySelector('#togglePassword');
+  const password = document.querySelector('#id_password');
+ 
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+
+const togglePassword1 = document.querySelector('#togglePassword1');
+  const password1 = document.querySelector('#id_password1');
+ 
+  togglePassword1.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password1.getAttribute('type') === 'password' ? 'text' : 'password';
+    password1.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+
+    </script>
+   
+</body>
+</html>
