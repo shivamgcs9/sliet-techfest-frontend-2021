@@ -296,6 +296,10 @@ input[type="submit"] {
 }
 
 
+#tel{
+  width: 35px; 
+}
+
 
 /* -----------------------
 MEDIA QUERIES - Responsive
@@ -366,6 +370,10 @@ MEDIA QUERIES - Responsive
 
     .social-media img{
         width: 25px;
+    }
+    
+    #tel{
+      width: 25px; 
     }
 
 }
