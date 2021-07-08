@@ -11,7 +11,11 @@
 
      <!-- Load an icon library -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+      
+     <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+    </script>
+     
  
 </head>
 <body>
@@ -21,26 +25,22 @@
         <ul class="navlist">
             <li class="PRIntern"><a href="PRIntern">PR Intern</a></li>
             <li class="Register"><a href="Register">Register</a></li>
-            <li><a href="#" class="showsidemenu" onclick="open()">&#9776;</a></li>
+            <li><button  id ="showbtn" class="showsidemenu" onclick="shows()" >&#9776;</button></li>
         </ul>
         
     </nav>
     <div class="sidemenu" id="sidebox">
+       <li><a href="#" class="dasbtn">Dashboard</a></li>
        <li><a href="#">home</a></li>
-       <li><a href="#">home</a></li>
-       <li><a href="#">home</a></li>
-       <li><a href="#">home</a></li>
-       <li><a href="#">home</a></li>
-       <li><a href="#" class="hidesidemenu" onclick="hide()">&times;</a></li>
+       <li><a href="#">About us</a></li>
+       <li><a href="#">Domains</a></li>
+       <li><a href="#">Workshops</a></li>
+       <li><a href="#">Sponsor US</a></li>
+       <li><a href="#">PR Intern</a></li>
+       <li><a href="#">Contact US</a></li>
+       <li><button id ="hidebtn" class="hidesidemenu" onclick="hide()">&times;</button></li>
     </div>
-    <script type="text/javascript">
-        function open(){
-            document.getElementById("sidebox").style.width="250px";
-        }
-        function hide(){
-            document.getElementById("sidebox").style.width="0px";
-        }
-    </script>
+    
     <section class="firstsection">
         <div class="arrow">
             <img src="./static/arrowgroup.svg" alt="">
@@ -51,10 +51,10 @@
                 <h1>techFEST’</h1>
                 
                 <p>
-                    Sliet Longowal’s  Virtual <br>
+                    SLIET Longowal’s  Virtual <br>
                     Techno- Management Fest
                 </p>
-                <li><a href="./index2.html"> Adaventure Here</a></li>
+                <li><a href="#" onclick="featuredpart()"> Adaventure Here !</a></li>
                 </div>
             <img src="./static/Logo.png" alt="" class="leftlogo1" >
             <img src="./static/BgLogoGradient.png" class="rightlogo1">
@@ -63,11 +63,11 @@
     <section class="second">
         <section class="middle">
             <div class="text">
-                <div class="bold">techFEST 21</div>
-                <h4>REVITALISING INDIA | पुनः सशक्त भारत </h4>
+                <div class="bold">techFEST' 21</div>
+                <h4>REVITALISING INDIA |  पुनः सशक्त भारत </h4>
                 <P>The annual technical festival of SLIET, techFEST <br> provides a platform to over 10000 eyeballs to witness <br> a magnificent fusion of science and technology with <br> pure delight and enthusiasm. 
                 </P>
-               <button class="Explore">Explore</button>
+               <button class="Explore">Explore The Domains</button>
                <button class="aboutus">About Us</button>
                 
             </div>
@@ -75,13 +75,13 @@
                 <img src="./static/video.png" alt="">
             </div>
             <div class="featurevideo">
-                <h3>featurevideo Here!</h3>
+                <p>Feature video Here!<p>
                 <img src="./static/Logo.png" alt="">
             </div>
         </section>
     
-        <div class="sponser">
-                <h2>SPONSERS</h2>
+        <div class="sponser " >
+                <h2>SPONSORS</h2>
                  
                 <footer class="sponsericons">    
                     <img src="./static/Icons/facebookicon.svg" alt="">
@@ -105,6 +105,22 @@
             </footer>
 
     </section>
+    <script type="text/javascript">
+    function featuredpart()
+    {
+        document.getElementsByClassName("middle").style.display="block";
+    }
+    var divId=document.getElementById("sidebox");
+    function shows()
+    {
+        divId.style.display="block";
+    }
+    function hide()
+    {
+        divId.style.display="none";
+    }
+        
+    </script>
 </section>
 </body>
 </html>

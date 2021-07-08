@@ -4,9 +4,21 @@
     font-family: sans-serif;
     
 }
+@font-face {
+    font-family:VBI ;
+    src: url(./fonts/vipnagorgialla\ bd\ it.otf);
+}
+@font-face {
+    font-family:VRI ;
+    src: url(./fonts/vipnagorgialla\ rg\ it.otf);
+}
+@font-face {
+    font-family:EMI ;
+    src: url(./fonts/exo.medium-italic.otf);
+}
 .hero{
      
-    background: #0034EB;
+    background: black;
     height: 100%;
     width: 100%;
     background-image:url(image1.png);
@@ -19,7 +31,6 @@
 .logo img{
     height: 100%;
     width: 70%;
-  
 }
 
 .logo{
@@ -54,13 +65,13 @@
 }
 .form-box h1{
     margin-top: 10%;
-    font-family:Italic;
+    font-family:VBI;
     text-align: center;
-    font-size: 30px;
+    font-size: 27px;
 
 }
 .tagline{
-    font-family:Italic;
+    font-family:EMI;
     text-align: center;
     font-size: 11px;
 
@@ -99,6 +110,7 @@ a:hover{
     font-size: 12px;
 }
 .toggle-btn{
+    color: white;
     padding: 5% 15%;
     background: transparent;
     border: none;
@@ -119,8 +131,8 @@ a:hover{
 .input-group{
     top: 30%;
     position: absolute;
-    width: 80%;
-    margin-left: -2%;
+    width: 75%;
+    margin-left: 4%;
     margin-right: 10%;
     transition: 0s;
 }
@@ -155,6 +167,7 @@ a:hover{
     background: transparent;
 }
 .submit-btn{
+    font-family: EMI;
     font-size: 13px;
     width: 50%;
     padding: 8px 15px;
@@ -173,6 +186,14 @@ span{
     font-size: 12px;
     bottom: 47px;
     position: absolute;
+}
+.previous{
+    color: white;
+   
+}
+.next{
+    color: white;
+    
 }
 #login{
     left: 8%;
