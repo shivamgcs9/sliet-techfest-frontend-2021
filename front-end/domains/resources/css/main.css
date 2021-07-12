@@ -21,6 +21,8 @@ body {
     overflow: hidden;
     overflow-y: hidden;
     background: url(../img/earth1.svg); 
+    background-size:cover;
+    background-position:center;
     background-repeat: no-repeat;
     
     /* min-height: 100vh;
