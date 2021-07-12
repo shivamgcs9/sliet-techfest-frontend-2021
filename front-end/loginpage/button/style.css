@@ -1,0 +1,253 @@
+ * {
+    margin: 0;
+  }
+  @font-face {
+    font-family:VBI ;
+    src: url(./fonts/vipnagorgialla\ bd\ it.otf);
+}
+@font-face {
+    font-family:VRI ;
+    src: url(./fonts/vipnagorgialla\ rg\ it.otf);
+}
+@font-face {
+    font-family:EMI ;
+    src: url(./fonts/exo.medium-italic.otf);
+}
+  body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto Thin", sans-serif;
+    background:black;
+    background-image:url("image1.png") ;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+  }
+  .bg{
+    
+  }
+  .logo img{
+    height: 520px;
+    width: 900px;
+    margin-top: 10%;
+}
+
+.logo{
+    padding-top: 20%;
+    padding-left: 0;
+    position: relative;
+}
+  .ktn{
+    width: 480px;
+     height: 620px;
+    top: 50%;
+    left: 50%;
+    margin-top: 3%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    position: absolute;
+    padding: 5px;
+    overflow: hidden;
+    border-width: 5px;
+    border-radius: 20px;
+    border: 3px solid lightgreen;
+            text-align: justify;
+            background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+            backdrop-filter: blur(42px);
+    }
+    .box{
+      width: 450px;
+      height: 100px;
+      border: 3px solid white;
+      box-sizing: border-box;
+      margin-bottom: 480px;
+      margin-left: 2%;
+    }
+  a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 7%;
+    margin-top: 10%;
+    font-family: Exo;
+    font-style: normal;
+    font-weight: normal;
+  }
+a:hover{
+   
+    border-radius: 20px;
+    color: #D9D9DA;
+}
+  h1 {
+    font-family: VBI;
+font-size: 30px;
+text-align: center;
+color: #FCFDFF;
+margin-top: 5%;
+  }
+  .name{
+          text-align: center;
+          color: white;
+          margin-top: 5%;
+          font-family: Exo;
+          font-style: normal;
+          font-weight: normal;
+  }
+  h2
+  {
+    font-size: 20px;
+  }
+  h3{
+    margin-left: 7%;
+    margin-top: 2%;
+    color: #FFFFFF;
+    font-family: Exo;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+
+  }
+  h6{
+    margin-left: 25%;
+font-family: EMI;
+font-weight: 600;
+font-size: 12px;
+color: #FFFFFF;
+  }
+  .radio-container {
+    font-size: 12px;
+    padding: 8px;
+    margin-top: 10px;
+    color: #FFFFFF;
+    margin-left: 3%; 
+    font-family: Exo;
+    font-style: normal;
+    font-weight: normal;
+    }
+  input[type="radio"] {
+    display: none;
+  }
+  label {
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    padding-right: 20px;
+ }
+  label:nth-last-child(1) {
+    padding-right: 0;
+  }
+  label::before {
+    content: "";
+    border: 2px solid  #FFFFFF;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    color:  #FFFFFf;
+    margin: -7.5px 10px;
+    margin-left: 0;
+    border-radius: 50%;
+  }
+  label::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+     left: 5px;
+    top: 10px;
+    margin: -7px 25px;
+    margin-left: 0;
+    border-radius: 50%;
+    transition: all 0.4s;
+  }
+  input[type="radio"]:checked + label::after {
+    background: #07FFC3;
+  }
+  .submit-btn{
+    width: 40%;
+    padding: 10px 5px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #07FFC3;
+    border: 0;
+    outline: none;
+    border-radius: 5px; 
+    margin-top: 20px;
+}
+.enfo-btn{
+  background-color: #FFFFFF;
+}
+.x{
+  display: flex;
+  margin-top: 50px;
+}
+@media screen and ( max-width: 800px) {
+  .ktn{
+    margin-left: -7%;
+
+
+  }
+  .logo{
+    right: 48px;
+  }
+}
+
+@media screen and ( max-width: 700px) {
+  .ktn{
+    margin-left: 7%;
+
+
+  }
+  .logo{
+    right: -37px;
+  }
+}
+@media screen and ( max-width: 600px) {
+  .ktn{
+    margin-left: 9%;
+    top: 384px;
+  }
+  .logo{
+    right: -45px;
+    top: 13px;
+  }
+}
+@media screen and ( max-width: 500px) {
+  .ktn{
+    margin-left: 21%;
+    top: 384px;
+  }
+  .logo{
+    right: -80px;
+    top: 13px;
+  }
+}
+@media screen and ( max-width: 450px) {
+  .ktn{
+    margin-left: 33%;
+    top: 501px;
+  }
+  .logo{
+    width: 30%;
+    right: 252px;
+    top: 13px;
+  }
+}
+@media screen and ( max-width: 375px) {
+  .ktn{
+    margin-left: 44%;
+    top: 528px;
+  }
+  .logo{
+    width: 30%;
+    right: 252px;
+    top: 13px;
+  }
+}
