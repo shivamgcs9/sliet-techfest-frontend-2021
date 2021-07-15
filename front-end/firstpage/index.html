@@ -9,22 +9,25 @@
      <!-- Stylesheets -->
      <link rel="stylesheet" href="index2copy.css">
 
+     <link rel="shortcut icon" type="image/jpg" href="./static/favicon.png"/>
+
      <!-- Load an icon library -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
      <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
     </script>
      
  
 </head>
 <body>
     <section class="gifadd">
+        <div class="bg">
     <nav class="navbar bg">
         <div class="rightnav">techFEST' 21</div>
         <ul class="navlist">
-            <li class="PRIntern"><a href="PRIntern">PR Intern</a></li>
-            <li class="Register"><a href="Register">Register</a></li>
+            <li class="PRIntern"><a href="./test.html">PR Intern</a></li>
+            <li class="Register"><a href="./test.html">Register</a></li>
             <li><button  id ="showbtn" class="showsidemenu" onclick="shows()" >&#9776;</button></li>
         </ul>
         
@@ -54,12 +57,13 @@
                     SLIET Longowal’s  Virtual <br>
                     Techno- Management Fest
                 </p>
-                <li><a href="#" onclick="featuredpart()"> Adaventure Here !</a></li>
+                <li><a href="#" onclick="featuredpart()"> Adventure Here !</a></li>
                 </div>
             <img src="./static/Logo.png" alt="" class="leftlogo1" >
             <img src="./static/BgLogoGradient.png" class="rightlogo1">
         </div>
     </section>
+</div>
     <section class="second">
         <section class="middle">
             <div class="text">
@@ -79,9 +83,9 @@
                 <img src="./static/Logo.png" alt="">
             </div>
         </section>
-    
+         
         <div class="sponser " >
-                <h2>SPONSORS</h2>
+                <h2>SPONSORS/PATRNERS</h2>
                  
                 <footer class="sponsericons">    
                     <img src="./static/Icons/facebookicon.svg" alt="">
@@ -103,22 +107,29 @@
                 <img src="./static/Icons/youtubeicon.svg" alt="">
             </div>
             </footer>
-
+      
     </section>
     <script type="text/javascript">
-    function featuredpart()
-    {
-        document.getElementsByClassName("middle").style.display="block";
-    }
+    function featuredpart() {
+    $('html,body').animate({
+        scrollTop: $(".second").offset().top},
+        'slow');
+};
     var divId=document.getElementById("sidebox");
     function shows()
     {
-        divId.style.display="block";
+        divId.style.width="250px";
     }
     function hide()
     {
-        divId.style.display="none";
+        divId.style.width="0";
     }
+    function changeCss () {
+    var bodyElement = document.querySelector("body");
+     var navElement = document.querySelector(".rightnav");
+     this.scrollY > 900 ? navElement.style.opacity = 0.3 : navElement.style.opacity = 1;
+   }
+    window.addEventListener("scroll", changeCss , false);
         
     </script>
 </section>
